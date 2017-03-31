@@ -10,8 +10,8 @@ import { NewMealComponent } from './new-meal.component';
   imports: [ BrowserModule,
                   FormsModule ],
   declarations: [ AppComponent,
-                  MealListComponent
-                  EditMealComponent
+                  MealListComponent,
+                  EditMealComponent,
                   NewMealComponent],
   bootstrap:    [ AppComponent ]
 })

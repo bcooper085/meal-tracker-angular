@@ -9,7 +9,7 @@ import { Meal } from './meal.model';
       <option value="nothealthy">Not Healthy</option>
     </select>
   <ul>
-    <li *ngFor="let currentMeal of childMealList | healthyness:filterByHealthy">Name: {{currentMeal.name}} <br> Details: {{currentMeal.details}} <br> <span [class]="priorityColor(currentMeal)">Calories: {{currentMeal.calories}}</span>
+    <li *ngFor="let currentMeal of childMealList">Name: {{currentMeal.name}} <br> Details: {{currentMeal.details}} <br> <span [class]="priorityColor(currentMeal)">Calories: {{currentMeal.calories}}</span>
     <button class="btn btn-success" (click)="editButtonClicked(currentMeal)">Edit!</button><hr></li>
   </ul>
   `

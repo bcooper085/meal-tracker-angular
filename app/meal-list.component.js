@@ -42,7 +42,7 @@ var MealListComponent = (function () {
     MealListComponent = __decorate([
         core_1.Component({
             selector: 'meal-list',
-            template: "\n  <select (change)=\"onChange($event.target.value)\">\n      <option value=\"healthy\">Healthy</option>\n      <option value=\"nothealthy\">Not Healthy</option>\n    </select>\n  <ul>\n    <li *ngFor=\"let currentMeal of childMealList | healthyness:filterByHealthy\">Name: {{currentMeal.name}} <br> Details: {{currentMeal.details}} <br> <span [class]=\"priorityColor(currentMeal)\">Calories: {{currentMeal.calories}}</span>\n    <button class=\"btn btn-success\" (click)=\"editButtonClicked(currentMeal)\">Edit!</button><hr></li>\n  </ul>\n  "
+            template: "\n  <select (change)=\"onChange($event.target.value)\">\n      <option value=\"healthy\">Healthy</option>\n      <option value=\"nothealthy\">Not Healthy</option>\n    </select>\n  <ul>\n    <li *ngFor=\"let currentMeal of childMealList\">Name: {{currentMeal.name}} <br> Details: {{currentMeal.details}} <br> <span [class]=\"priorityColor(currentMeal)\">Calories: {{currentMeal.calories}}</span>\n    <button class=\"btn btn-success\" (click)=\"editButtonClicked(currentMeal)\">Edit!</button><hr></li>\n  </ul>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], MealListComponent);
