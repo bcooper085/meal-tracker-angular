@@ -8,7 +8,7 @@ import { Meal } from './meal.model';
     <div class="jumbotron">
      <h1>Meal Tracker</h1>
     </div>
-    <h1>Daily Meals</h1>
+    <h1 class="meal-label">Daily Meals</h1>
     <meal-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></meal-list>
     <edit-meal [childSelectedMeal]="selectedMeal" (doneButtonClickedSender)="finishedEditing()"></edit-meal>
     <new-meal (newMealSender)="addMeal($event)"></new-meal>

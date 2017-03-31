@@ -25,7 +25,7 @@ var NewMealComponent = (function () {
     NewMealComponent = __decorate([
         core_1.Component({
             selector: 'new-meal',
-            template: "\n  <div class=\"newMealForm\">\n    <h1>New Meal</h1>\n    <input #newName placeholder=\"Meal Name\">\n    <input #newDetails placeholder=\"Meal Details\">\n    <input #newCalories placeholder=\"Calories\">\n    <button class=\"btn btn-primary\" (click)=\"submitMeal(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';\">Add Meal</button>\n  </div>\n  "
+            template: "\n  <div class=\"new-meal-form\">\n    <h1 class=\"meal-label\">New Meal</h1>\n    <input #newName placeholder=\"Meal Name\">\n    <input #newDetails placeholder=\"Meal Details\">\n    <input #newCalories placeholder=\"Calories\"><br>\n    <button class=\"btn btn-primary\" (click)=\"submitMeal(newName.value, newDetails.value, newCalories.value); newName.value=''; newDetails.value=''; newCalories.value='';\">Add Meal</button>\n  </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], NewMealComponent);

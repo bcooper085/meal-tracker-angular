@@ -1,4 +1,4 @@
 export class Meal {
-  public totalCalories: number = 0;
+  public fresh: boolean = false;
   constructor(public name: string, public details: string, public calories: number) { }
 }

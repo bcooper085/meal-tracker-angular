@@ -4,7 +4,7 @@ var Meal = (function () {
         this.name = name;
         this.details = details;
         this.calories = calories;
-        this.totalCalories = 0;
+        this.fresh = false;
     }
     return Meal;
 }());
