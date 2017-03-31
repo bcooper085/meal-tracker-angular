@@ -9,7 +9,7 @@ import { Meal } from './meal.model';
      <h1>Meal Tracker</h1>
     </div>
     <h1>Daily Meals</h1>
-    <meal-list></meal-list>
+    <meal-list [childMealList]="masterMealList" (clickSender)="editMeal($event)"></meal-list>
    </div>
   `
 })
